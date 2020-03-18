@@ -6,8 +6,8 @@ module.exports = function (grunt) {
                 preserveLineBreaks: false
             },
             files: {
-                src: 'dist/index.html',
-                dest: 'dist/index.html'
+                src: 'dist/demo.html',
+                dest: 'dist/demo.html'
             }
         },
         cssmin: {
