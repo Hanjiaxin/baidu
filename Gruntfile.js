@@ -6,7 +6,7 @@ module.exports = function (grunt) {
                 preserveLineBreaks: false
             },
             files: {
-                src: 'dist/demo.html',
+                src: './demo.html',
                 dest: 'dist/demo.html'
             }
         },
@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         uglify: {
             release: {
                 files: {
-                    'dist/demo.min.js': 'dist/demo.js',
+                    'dist/demo.min.js': 'demo.js',
                 }
             }
         }
@@ -25,5 +25,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.registerTask('release', ['uglify', 'cssmin', 'htmlmin']);
+    grunt.registerTask('default', ['uglify', 'cssmin', 'htmlmin']);
 };
